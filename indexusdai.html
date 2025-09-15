@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>USD AI — Infographic Landing</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  :root{
+    --ring: rgba(139,92,246,0.40); /* purple */
+    --dot: #a78bfa;
+    --glow: 0 0 40px rgba(139,92,246,0.35);
+    --bg-from: rgba(76,29,149,0.60);
+    --bg-to: #0b1220;
+  }
+  .accent-emerald{ --ring: rgba(16,185,129,0.40); --dot:#10b981; --glow:0 0 40px rgba(16,185,129,0.35); --bg-from: rgba(6,95,70,0.60);} 
+  .accent-sky{ --ring: rgba(56,189,248,0.40); --dot:#38bdf8; --glow:0 0 40px rgba(56,189,248,0.35); --bg-from: rgba(7,89,133,0.60);} 
+  .ring-accent{ box-shadow: 0 0 0 1px var(--ring) inset; }
+  .glow{ box-shadow: var(--glow); }
+  .dot{ background: var(--dot); }
+  .bg-grad{ background-image: linear-gradient(to bottom, var(--bg-from), var(--bg-to)); }
+  html,body{ font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji"; }
+  /* helper for screenshot spacing */
+  .container{ max-width: 1120px; }
+</style>
+</head>
+<body class="min-h-screen w-full text-white bg-grad">
+  <!-- Header -->
+  <header class="sticky top-0 z-20 border-b border-white/10 bg-black/40 backdrop-blur">
+    <div class="container mx-auto flex items-center justify-between px-4 py-3">
+      <div class="flex items-center gap-3">
+        <div class="h-8 w-8 rounded-xl bg-white/10"></div>
+        <div>
+          <div class="text-[10px] uppercase tracking-[0.2em] text-white/60">Alie Network — USD AI</div>
+          <div class="text-sm text-white/80">Infographic Landing • Accent: <span id="accentName">purple</span></div>
+        </div>
+      </div>
+      <div class="flex items-center gap-2 text-xs">
+        <span class="hidden sm:inline text-white/60">Accent</span>
+        <button data-accent="purple" class="h-4 w-4 rounded-full bg-violet-400" title="Purple"></button>
+        <button data-accent="emerald" class="h-4 w-4 rounded-full bg-emerald-400" title="Emerald"></button>
+        <button data-accent="sky" class="h-4 w-4 rounded-full bg-sky-400" title="Sky"></button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-4 pb-16">
+    <!-- Hero -->
+    <section class="relative mx-auto mt-10 flex flex-col items-center text-center">
+      <div class="relative w-full overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-b from-black/40 to-black/60 p-8 md:p-14 ring-accent glow">
+        <div class="absolute -left-24 -top-24 h-72 w-72 rounded-full bg-white/5 blur-3xl"></div>
+        <div class="absolute -bottom-32 -right-20 h-80 w-80 rounded-full bg-white/5 blur-3xl"></div>
+        <p class="text-[11px] uppercase tracking-[0.25em] text-white/60">USD AI — Web3 × AI Market Intelligence</p>
+        <h1 class="mt-3 text-3xl font-bold leading-tight md:text-5xl">From Noise to Signal — in Weeks, not Quarters</h1>
+        <p class="mx-auto mt-4 max-w-3xl text-white/80 md:text-lg">We turn raw market chatter into decision‑grade insights and ship them as a shareable playbook: S.A.G.A. scorecards, 30‑day plans, and creator‑ready campaigns.</p>
+        <div class="mt-6 flex flex-wrap items-center justify-center gap-3">
+          <a href="#score" class="rounded-xl bg-white/10 px-4 py-2 text-sm hover:bg-white/15">See the Scorecard</a>
+          <a href="#plan" class="rounded-xl bg-white text-slate-900 px-4 py-2 text-sm font-semibold hover:bg-white/90">Preview 30‑Day Plan</a>
+          <a href="#funnel" class="rounded-xl bg-white/10 px-4 py-2 text-sm hover:bg-white/15">Funnel Map</a>
+        </div>
+        <div class="mt-8 grid w-full grid-cols-1 gap-3 sm:grid-cols-3">
+          <div class="rounded-2xl border border-white/10 bg-black/40 p-4 text-left">
+            <div class="text-[11px] uppercase tracking-widest text-white/60">Signals surfaced</div>
+            <div class="mt-1 flex items-baseline gap-2 text-lg font-semibold"><span>Actionable &gt; Noise</span><span class="h-2 w-2 rounded-full dot"></span></div>
+          </div>
+          <div class="rounded-2xl border border-white/10 bg-black/40 p-4 text-left">
+            <div class="text-[11px] uppercase tracking-widest text-white/60">Playbooks shipped</div>
+            <div class="mt-1 flex items-baseline gap-2 text-lg font-semibold"><span>Weekly cadence</span><span class="h-2 w-2 rounded-full dot"></span></div>
+          </div>
+          <div class="rounded-2xl border border-white/10 bg-black/40 p-4 text-left">
+            <div class="text-[11px] uppercase tracking-widest text-white/60">Compliance</div>
+            <div class="mt-1 flex items-baseline gap-2 text-lg font-semibold"><span>#ad • DYOR ready</span><span class="h-2 w-2 rounded-full dot"></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scorecard -->
+    <section id="score" class="mx-auto mt-12">
+      <h2 class="text-xl font-bold">S.A.G.A. Scorecard — What we judge before we bet</h2>
+      <p class="mt-2 max-w-2xl text-white/70">A pragmatic 0–100 assessment across four pillars. We tag <span class="font-semibold text-white">facts vs claims</span>, surface red flags, and translate the output into a 30‑day action plan.</p>
+      <div class="mt-5 grid grid-cols-1 gap-4 md:grid-cols-2">
+        <div class="relative overflow-hidden rounded-2xl border border-white/10 bg-black/40 p-4 glow">
+          <div class="mb-2 text-sm text-white/70">Team &amp; Vision</div>
+          <div class="h-3 w-full rounded-full bg-white/10"><div class="h-3 rounded-full bg-white/70" style="width:72%"></div></div>
+          <div class="mt-2 text-sm text-white/60">Score: <span class="font-semibold text-white">72/100</span></div>
+        </div>
+        <div class="relative overflow-hidden rounded-2xl border border-white/10 bg-black/40 p-4 glow">
+          <div class="mb-2 text-sm text-white/70">Product &amp; Tech</div>
+          <div class="h-3 w-full rounded-full bg-white/10"><div class="h-3 rounded-full bg-white/70" style="width:81%"></div></div>
+          <div class="mt-2 text-sm text-white/60">Score: <span class="font-semibold text-white">81/100</span></div>
+        </div>
+        <div class="relative overflow-hidden rounded-2xl border border-white/10 bg-black/40 p-4 glow">
+          <div class="mb-2 text-sm text-white/70">Community &amp; Market</div>
+          <div class="h-3 w-full rounded-full bg-white/10"><div class="h-3 rounded-full bg-white/70" style="width:65%"></div></div>
+          <div class="mt-2 text-sm text-white/60">Score: <span class="font-semibold text-white">65/100</span></div>
+        </div>
+        <div class="relative overflow-hidden rounded-2xl border border-white/10 bg-black/40 p-4 glow">
+          <div class="mb-2 text-sm text-white/70">Financial Health</div>
+          <div class="h-3 w-full rounded-full bg-white/10"><div class="h-3 rounded-full bg-white/70" style="width:77%"></div></div>
+          <div class="mt-2 text-sm text-white/60">Score: <span class="font-semibold text-white">77/100</span></div>
+        </div>
+      </div>
+      <div class="mt-4 grid gap-2 text-sm text-white/70 md:grid-cols-3">
+        <div class="rounded-2xl border border-white/10 bg-black/40 p-3">• Proof links for audits, repositories, team bios.
+          <div class="mt-1 text-white/50">We separate verified sources from narratives.</div>
+        </div>
+        <div class="rounded-2xl border border-white/10 bg-black/40 p-3">• Risks heatmap (Low/Med/High) and mitigations.
+          <div class="mt-1 text-white/50">Trust is a product feature.</div>
+        </div>
+        <div class="rounded-2xl border border-white/10 bg-black/40 p-3">• 5 immediate actions for the first 30 days.
+          <div class="mt-1 text-white/50">Momentum &gt; motion.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Timeline -->
+    <section id="plan" class="mx-auto mt-12">
+      <h2 class="text-xl font-bold">30‑Day Growth — the first 14 as a sprint</h2>
+      <p class="mt-2 max-w-2xl text-white/70">A simple cadence that compounds: ship, measure, learn, repeat.</p>
+      <div class="mt-5 grid gap-3 md:grid-cols-2">
+        <!-- cards -->
+        <div class="rounded-2xl border border-white/10 bg-black/40 p-4 glow"><div class="text-xs uppercase tracking-widest text-white/60">D1</div><div class="mt-1 text-sm md:text-base">Offer Matrix + S.A.G.A. page live</div></div>
+        <div class="rounded-2xl border border-white/10 bg-black/40 p-4 glow"><div class="text-xs uppercase tracking-widest text-white/60">D2</div><div class="mt-1 text-sm md:text-base">KOL shortlist &amp; briefs</div></div>
+        <div class="rounded-2xl border border-white/10 bg-black/40 p-4 glow"><div class="text-xs uppercase tracking-widest text-white/60">D3</div><div class="mt-1 text-sm md:text-base">AI‑ready visuals (2 creatives)</div></div>
+        <div class="rounded-2xl border border-white/10 bg-black/40 p-4 glow"><div class="text-xs uppercase tracking-widest text-white/60">D4</div><div class="mt-1 text-sm md:text-base">AMA announcement</div></div>
+        <div class="rounded-2xl border border-white/10 bg-black/40 p-4 glow"><div class="text-xs uppercase tracking-widest text-white/60">D5</div><div class="mt-1 text-sm md:text-base">KOL wave #1 #ad posts</div></div>
+        <div class="rounded-2xl border border-white/10 bg-black/40 p-4 glow"><div class="text-xs uppercase tracking-widest text-white/60">D6–7</div><div class="mt-1 text-sm md:text-base">Iterate winners + community recap</div></div>
+        <div class="rounded-2xl border border-white/10 bg-black/40 p-4 glow"><div class="text-xs uppercase tracking-widest text-white/60">D8</div><div class="mt-1 text-sm md:text-base">Demo clip (agent/game)</div></div>
+        <div class="rounded-2xl border border-white/10 bg-black/40 p-4 glow"><div class="text-xs uppercase tracking-widest text-white/60">D9</div><div class="mt-1 text-sm md:text-base">KOL wave #2 + retarget copy</div></div>
+        <div class="rounded-2xl border border-white/10 bg-black/40 p-4 glow"><div class="text-xs uppercase tracking-widest text-white/60">D10</div><div class="mt-1 text-sm md:text-base">Mini case study #1</div></div>
+        <div class="rounded-2xl border border-white/10 bg-black/40 p-4 glow"><div class="text-xs uppercase tracking-widest text-white/60">D11</div><div class="mt-1 text-sm md:text-base">Spaces / AMA live</div></div>
+        <div class="rounded-2xl border border-white/10 bg-black/40 p-4 glow"><div class="text-xs uppercase tracking-widest text-white/60">D12</div><div class="mt-1 text-sm md:text-base">Deck + metrics update</div></div>
+        <div class="rounded-2xl border border-white/10 bg-black/40 p-4 glow"><div class="text-xs uppercase tracking-widest text-white/60">D13–14</div><div class="mt-1 text-sm md:text-base">Growth report + next sprint</div></div>
+      </div>
+    </section>
+
+    <!-- Funnel -->
+    <section id="funnel" class="mx-auto mt-12">
+      <h2 class="text-xl font-bold">Acquisition → Activation → Retention</h2>
+      <p class="mt-2 max-w-2xl text-white/70">One funnel, clearly instrumented with UTMs and key events.</p>
+      <div class="mt-5 rounded-3xl border border-white/10 bg-black/40 p-6">
+        <div class="grid items-center gap-6 md:grid-cols-3">
+          <!-- Acquire -->
+          <div class="rounded-2xl border border-white/10 bg-white/5 p-5 text-left ring-accent">
+            <div class="text-sm font-semibold">Acquire</div>
+            <ul class="mt-2 space-y-1 text-sm text-white/80">
+              <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full dot"></span>KOL #ad posts</li>
+              <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full dot"></span>Threads &amp; clips</li>
+              <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full dot"></span>Promo landing</li>
+            </ul>
+          </div>
+          <!-- Arrow -->
+          <div class="hidden md:block" aria-hidden="true">
+            <svg width="100%" height="40" viewBox="0 0 180 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 20 H150" stroke="white" stroke-opacity="0.5" stroke-width="2"/>
+              <path d="M150 10 L180 20 L150 30 Z" fill="white" fill-opacity="0.7"/>
+            </svg>
+          </div>
+          <!-- Activate -->
+          <div class="rounded-2xl border border-white/10 bg-white/5 p-5 text-left ring-accent">
+            <div class="text-sm font-semibold">Activate</div>
+            <ul class="mt-2 space-y-1 text-sm text-white/80">
+              <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full dot"></span>wallet_connect</li>
+              <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full dot"></span>claim_ai_land</li>
+              <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full dot"></span>join_discord</li>
+            </ul>
+          </div>
+          <!-- Arrow -->
+          <div class="hidden md:block md:col-start-2" aria-hidden="true">
+            <svg width="100%" height="40" viewBox="0 0 180 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 20 H150" stroke="white" stroke-opacity="0.5" stroke-width="2"/>
+              <path d="M150 10 L180 20 L150 30 Z" fill="white" fill-opacity="0.7"/>
+            </svg>
+          </div>
+          <!-- Retain -->
+          <div class="rounded-2xl border border-white/10 bg-white/5 p-5 text-left ring-accent">
+            <div class="text-sm font-semibold">Retain</div>
+            <ul class="mt-2 space-y-1 text-sm text-white/80">
+              <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full dot"></span>weekly quests</li>
+              <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full dot"></span>demo updates</li>
+              <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full dot"></span>AMA follow‑ups</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KOL Compliance -->
+    <section class="mx-auto mt-12">
+      <h2 class="text-xl font-bold">KOL Collaboration &amp; Disclosure</h2>
+      <div class="mt-4 grid gap-3 md:grid-cols-3">
+        <div class="rounded-2xl border border-white/10 bg-black/40 p-4">
+          <div class="text-sm font-semibold">Policy</div>
+          <p class="mt-1 text-sm text-white/70">All paid partnerships labeled <span class="font-semibold text-white">#ad</span> / “paid partnership”. Brand‑safety checks before go‑live.</p>
+        </div>
+        <div class="rounded-2xl border border-white/10 bg-black/40 p-4">
+          <div class="text-sm font-semibold">Tracking</div>
+          <p class="mt-1 text-sm text-white/70">UTMs + unique links/codes; events mapped to dashboard for weekly snapshot.</p>
+        </div>
+        <div class="rounded-2xl border border-white/10 bg-black/40 p-4">
+          <div class="text-sm font-semibold">Optimization</div>
+          <p class="mt-1 text-sm text-white/70">Iterate on creative, creator, and posting windows. Keep a public changelog of learnings.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="mx-auto mt-12">
+      <div class="rounded-3xl border border-white/10 bg-gradient-to-r from-white/5 to-white/[0.07] p-6 text-center ring-accent">
+        <h3 class="text-lg font-semibold">Ready to turn research into momentum?</h3>
+        <p class="mx-auto mt-2 max-w-2xl text-white/70">We’ll convert your analyses into a living playbook — scorecards, plans, creators — and ship weekly.</p>
+        <div class="mt-4 flex flex-wrap items-center justify-center gap-3">
+          <a class="rounded-xl bg-white text-slate-900 px-4 py-2 text-sm font-semibold hover:bg-white/90" href="#">Book a 15‑min Call</a>
+          <a class="rounded-xl bg-white/10 px-4 py-2 text-sm hover:bg-white/15" href="#">View Pitch Deck</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container mx-auto px-4 py-10 text-center text-xs text-white/50">
+    © <span id="y"></span> Alie Network • USD AI Infographic Landing • Use #ad and DYOR disclosures.
+  </footer>
+
+  <script>
+    // Accent switcher (pure DOM) — toggles CSS variables by swapping a class on <body>
+    const name = document.getElementById('accentName');
+    document.querySelectorAll('[data-accent]')?.forEach(btn=>{
+      btn.addEventListener('click',()=>{
+        document.body.classList.remove('accent-emerald','accent-sky');
+        const a = btn.dataset.accent;
+        if(a==='emerald') document.body.classList.add('accent-emerald');
+        if(a==='sky') document.body.classList.add('accent-sky');
+        name.textContent = a;
+      });
+    });
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
